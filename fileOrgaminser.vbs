@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "C:\Users\Arafath\OneDrive\Desktop\Python\fileOrganinser.bat", 0, True
