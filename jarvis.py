@@ -1,10 +1,5 @@
+import webbrowser, pyttsx3, os, pywhatkit, datetime, wikipedia, requests, pyjokes
 import speech_recognition as sr
-import pyttsx3
-import pywhatkit
-import os
-import datetime
-import wikipedia
-import requests
 from playsound import playsound
 
 listener = sr.Recognizer()
@@ -48,7 +43,7 @@ def run_command():
             sunny = """
                 \   /
                  .-.    
-             ― (   ) ―
+              ― (   ) ―
                  `-’
                 /   \  
             """
@@ -144,8 +139,8 @@ def run_command():
             talk("Your longitude is " + lon)
             command = command.replace(command, '')
         elif 'what is your name' in command:
-            print('My name is siri')
-            talk('My name is siri')
+            print('My name is Jarvis')
+            talk('My name is Jarvis')
             command = command.replace(command, '')
         elif 'close chrome' in command:
             talk('Yes sir')
@@ -213,5 +208,16 @@ def run_command():
             talk('Playing' + command)
             print('Processing...')
             pywhatkit.playonyt(command)
+            command = command.replace(command, '')
+        elif "what" in command:
+            command = command.replace('what is', '')
+            webbrowser.open("https://google.com/search?q="+''.join(command))
+            talk("These are the result that I got from web.")
+            command = command.replace(command, '')
+        elif "tell me a joke" or 'tell me another joke'in command:
+            os.system("clear")
+            joke = pyjokes.get_joke(language='en', category='all')
+            print(joke)
+            talk(joke)
             command = command.replace(command, '')
 run_command()
