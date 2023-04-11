@@ -1,9 +1,9 @@
 # Jarvis
-This is a Personal assistant made by #Mohamed Arafath.
+This is a Personal assistant made by # Mohamed Arafath.
 1. Download all the files
 2. Just open the python file and enjoy my code.
 
-#or
+# or
 
 1. Download all the files
 2. Copy the startup.vbs file and paste it to the Startup apps folder in your system
@@ -14,4 +14,4 @@ This is a Personal assistant made by #Mohamed Arafath.
 
 IF ANY PROBLEMS PLEASE MAIL TO mohamedarafath205@gmail.com
 
-#Don't Forget to like my Repo
+# Don't Forget to like my Repo
